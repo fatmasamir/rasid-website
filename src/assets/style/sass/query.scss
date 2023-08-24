@@ -1,0 +1,40 @@
+/*for small phone*/
+@mixin mobile {
+  @media (min-width: 0px) and (max-width: 479.98px) {
+    @content;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@mixin portrait_tablets {
+  @media only screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@mixin landscape_tablets {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@mixin laptops {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@mixin desktops {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+//screen without phone
+@mixin otherScreens {
+  @media (min-width: 480px) {
+    @content;
+  }
+}
